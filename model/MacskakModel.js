@@ -19,7 +19,7 @@ export default class MacskakModel {
 
   setLista(id) {
     //this.#LISTA[id].darabszam--;  //EZT CSAK AZÉRT KOMMENTELTEM KI, HOGY NE SZÁLLJON EL AZ EGÉSZ
-    //console.log(this.#LISTA[id]);
+    console.log(this.#LISTA[id]);
   }
 
   getList() {

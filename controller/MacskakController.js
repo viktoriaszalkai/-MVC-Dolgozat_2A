@@ -19,9 +19,9 @@ export default class MacskakController {
   }
 
   #esemenykezelo() {
-    /* $(window).on("kivKatt",(event) =>{
+    $(window).on("kivKatt",(event) =>{
             this.model.setLista(event.detail);
-        }); */
+        }); 
 
     $(window).on("kosKatt", (event) => {
       this.model.kosarListaLetrehoz(this.model.getList(), event.detail);
