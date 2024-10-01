@@ -8,7 +8,7 @@ export default class Macskak{
         this.#szuloELEM = szuloElem;
         console.log("view");
         this.macskakKiir();
-        /* this.szuloElem.empty(); */
+       /*  this.#szuloELEM.empty(); */
 
     }
 

@@ -43,6 +43,7 @@ export default class Macska {
     this.kivGOM.on("click", () => {
       const e = new CustomEvent("kivKatt", { detail: this.#index });
       window.dispatchEvent(e);
+      
     });
   }
   kosarKatt() {

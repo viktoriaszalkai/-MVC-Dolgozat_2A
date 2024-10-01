@@ -9,24 +9,28 @@ A adatok kosár listához adása a kosárba gombra kattintáskor (kosarba(adat))
 
 export default class MacskakModel {
   #LISTA = [];
-  #id;
-  #ertek; //db
+  #kosarLISTA =[];
+
 
   constructor() {
     this.#LISTA = MACSKALISTA;
     this.setLista();
   }
 
-  setLista(id, ertek) {
-    for (let index = id - 1; index < this.#LISTA.length; index++) {
-      ertek--;
-      console.log(ertek);
-    }
+  setLista(id) {
+    //this.#LISTA[id].darabszam--;  //EZT CSAK AZÉRT KOMMENTELTEM KI, HOGY NE SZÁLLJON EL AZ EGÉSZ
+    //console.log(this.#LISTA[id]);
   }
 
   getList() {
     return this.#LISTA;
   }
-  kosarListaLetrehoz() {}
-  getKosarLista() {}
+  kosarListaLetrehoz(lista,index) {
+
+    this.#kosarLISTA.push(lista[index]);
+    //console.log(kosarLista);
+  }
+  getKosarLista() {
+    return this.#kosarLISTA;
+  }
 }
