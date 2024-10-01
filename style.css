@@ -1,0 +1,26 @@
+*{
+    margin: auto;
+    place-content: center;
+    place-items: center;
+}
+.card{
+    margin: 5px;
+    width: 15%;
+}
+header,footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (max-width: 700px) {
+    .tartalom{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .card{
+        margin: 5px;
+        width: 60%;
+    }
+
+  }

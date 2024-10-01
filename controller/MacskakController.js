@@ -20,9 +20,8 @@ export default class MacskakController{
 
     #esemenykezelo(){
         $(window).on("kivKatt",(event) =>{
-            console.log(event.detail);
-            this.model.setLista(event.detail);
-            new Macskak(this.model.getList(),this.taroloElem);
+            
+            /* this.model.setLista(); */
         });
     }
 }

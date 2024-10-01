@@ -14,21 +14,19 @@ export default class MacskakModel {
 
   constructor() {
     this.#LISTA = MACSKALISTA;
+    this.setLista();
   }
 
   setLista(id, ertek) {
-    for (let index = id-1; index < this.#LISTA.length; index++) {
-        ertek--;
+    for (let index = id - 1; index < this.#LISTA.length; index++) {
+      ertek--;
+      console.log(ertek);
     }
   }
 
   getList() {
     return this.#LISTA;
   }
-  kosarListaLetrehoz(){
-
-  }
-  getKosarLista(){
-
-  }
+  kosarListaLetrehoz() {}
+  getKosarLista() {}
 }

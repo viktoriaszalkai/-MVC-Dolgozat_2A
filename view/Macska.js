@@ -17,15 +17,17 @@ export default class Macska {
     this.#szuloELEM = szuloElem;
     this.macskaKiir();
     this.macskaELEM = $(".card:last child");
-    this.kivGOM = $(".kiv:last cild");
-    this.kosGOM = $(".kos:last cild");
+    this.kivGOM = $(".kiv");
+    this.kosGOM = $(".kos");
+    this.kivalasztKatt();
+    this.kosarKatt();
   }
 
   macskaKiir() {
     this.#szuloELEM.append(
       `<div class="card col-4 col-md-4">
         <div class="card-body">
-            <h1 class="card-text">${this.#macskaADAT.id}</h1>
+            <h2 class="card-text">${this.#macskaADAT.id}</h2>
             <h3 class="card-title">${this.#macskaADAT.nev}</h3>
             <p class="card-text">${this.#macskaADAT.kor}</p>
             <p class="card-text">${this.#macskaADAT.nem}</p>
