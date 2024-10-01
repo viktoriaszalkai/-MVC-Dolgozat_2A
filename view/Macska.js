@@ -16,9 +16,9 @@ export default class Macska {
     this.#index = index;
     this.#szuloELEM = szuloElem;
     this.macskaKiir();
-    this.macskaELEM = $(".card:last child");
-    this.kivGOM = $(".kiv");
-    this.kosGOM = $(".kos");
+    this.macskaELEM = $(".card:last");
+    this.kivGOM = $(".kiv:last");
+    this.kosGOM = $(".kos:last");
     this.kivalasztKatt();
     this.kosarKatt();
   }

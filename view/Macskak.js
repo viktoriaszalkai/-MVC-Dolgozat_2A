@@ -7,8 +7,9 @@ export default class Macskak{
         this.#LISTA = lista;
         this.#szuloELEM = szuloElem;
         console.log("view");
+        this.#szuloELEM.empty();
         this.macskakKiir();
-       /*  this.#szuloELEM.empty(); */
+        
 
     }
 
